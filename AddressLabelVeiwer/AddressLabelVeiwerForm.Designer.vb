@@ -47,7 +47,7 @@ Partial Class AddressLabelVeiwerForm
         'FirstNamedTextBox
         '
         Me.FirstNamedTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.FirstNamedTextBox.Location = New System.Drawing.Point(26, 85)
+        Me.FirstNamedTextBox.Location = New System.Drawing.Point(15, 62)
         Me.FirstNamedTextBox.Name = "FirstNamedTextBox"
         Me.FirstNamedTextBox.Size = New System.Drawing.Size(266, 31)
         Me.FirstNamedTextBox.TabIndex = 1
@@ -83,7 +83,7 @@ Partial Class AddressLabelVeiwerForm
         'LastNameTextBox
         '
         Me.LastNameTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.LastNameTextBox.Location = New System.Drawing.Point(26, 163)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(15, 140)
         Me.LastNameTextBox.Name = "LastNameTextBox"
         Me.LastNameTextBox.Size = New System.Drawing.Size(266, 31)
         Me.LastNameTextBox.TabIndex = 2
@@ -91,7 +91,7 @@ Partial Class AddressLabelVeiwerForm
         'CityTextBox
         '
         Me.CityTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.CityTextBox.Location = New System.Drawing.Point(26, 317)
+        Me.CityTextBox.Location = New System.Drawing.Point(14, 303)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(266, 31)
         Me.CityTextBox.TabIndex = 4
@@ -99,7 +99,7 @@ Partial Class AddressLabelVeiwerForm
         'StreetAddressTextBox
         '
         Me.StreetAddressTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.StreetAddressTextBox.Location = New System.Drawing.Point(26, 249)
+        Me.StreetAddressTextBox.Location = New System.Drawing.Point(15, 226)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
         Me.StreetAddressTextBox.Size = New System.Drawing.Size(266, 31)
         Me.StreetAddressTextBox.TabIndex = 3
@@ -107,7 +107,7 @@ Partial Class AddressLabelVeiwerForm
         'ZipCodeTextBox
         '
         Me.ZipCodeTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.ZipCodeTextBox.Location = New System.Drawing.Point(26, 483)
+        Me.ZipCodeTextBox.Location = New System.Drawing.Point(14, 460)
         Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
         Me.ZipCodeTextBox.Size = New System.Drawing.Size(162, 31)
         Me.ZipCodeTextBox.TabIndex = 6
@@ -115,7 +115,7 @@ Partial Class AddressLabelVeiwerForm
         'StateTextBox
         '
         Me.StateTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.StateTextBox.Location = New System.Drawing.Point(26, 405)
+        Me.StateTextBox.Location = New System.Drawing.Point(15, 382)
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(162, 31)
         Me.StateTextBox.TabIndex = 5
@@ -178,6 +178,12 @@ Partial Class AddressLabelVeiwerForm
         '
         Me.MailingAddressGroupBox.BackColor = System.Drawing.SystemColors.Control
         Me.MailingAddressGroupBox.Controls.Add(Me.Label6)
+        Me.MailingAddressGroupBox.Controls.Add(Me.FirstNamedTextBox)
+        Me.MailingAddressGroupBox.Controls.Add(Me.LastNameTextBox)
+        Me.MailingAddressGroupBox.Controls.Add(Me.StreetAddressTextBox)
+        Me.MailingAddressGroupBox.Controls.Add(Me.CityTextBox)
+        Me.MailingAddressGroupBox.Controls.Add(Me.ZipCodeTextBox)
+        Me.MailingAddressGroupBox.Controls.Add(Me.StateTextBox)
         Me.MailingAddressGroupBox.Location = New System.Drawing.Point(12, 23)
         Me.MailingAddressGroupBox.Name = "MailingAddressGroupBox"
         Me.MailingAddressGroupBox.Size = New System.Drawing.Size(311, 525)
@@ -214,17 +220,11 @@ Partial Class AddressLabelVeiwerForm
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ZipCodeTextBox)
-        Me.Controls.Add(Me.StateTextBox)
-        Me.Controls.Add(Me.CityTextBox)
-        Me.Controls.Add(Me.StreetAddressTextBox)
-        Me.Controls.Add(Me.LastNameTextBox)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
         Me.Controls.Add(Me.DisplayLabelButton)
-        Me.Controls.Add(Me.FirstNamedTextBox)
-        Me.Controls.Add(Me.MailingAddressGroupBox)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.MailingAddressGroupBox)
         Me.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Name = "AddressLabelVeiwerForm"
         Me.Text = "Form1"

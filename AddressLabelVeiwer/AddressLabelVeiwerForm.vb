@@ -17,7 +17,8 @@ Public Class AddressLabelVeiwerForm
 
         AddressLabelLabel.Text = ""
 
-        For Each textBox In Me.Controls
+        'For Each textBox In Me.Controls 'this is good work but the container is the MailingAddressGroupBox - TJR
+        For Each textBox In MailingAddressGroupBox.Controls '  enjoy...
 
             If TypeOf textBox Is TextBox Then
 
@@ -45,6 +46,7 @@ Public Class AddressLabelVeiwerForm
 
     Sub ValidateTextBoxes()
         Dim problem As Boolean = False
+        'Too many IF's. What if you loop on the text boxes and had an array of strings like: evaluationMessages(friendyName,messageIfEmpty) - TJR
         If FirstNamedTextBox.Text = "" Then
             Accumulatemessage("First Name Pls", False)
             FirstNamedTextBox.Focus()
